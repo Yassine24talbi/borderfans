@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Cadre Fans</title>
+</head>
+<body>
+    <div class="message" id="message"></div>
+    <div class="menu">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="indexmenu">
+            <li><a href="index.html" style="font-weight: 500;color: rgb(171, 145, 0)">Home</a> </li>
+            <li><a href="store.html">Store</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <i class='bx bx-chevrons-right' onclick="openmenu.call(this)" id="openbutton"></i>
+    </div>
+    <div class="nav-bar">
+        
+        <ul class="indexs">
+            <li><a href="index.html" style="font-weight: 500;color: rgb(171, 145, 0);">Home</a> </li>
+            <li><a href="store.html">Store</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="social">
+            <li><a href="https://www.instagram.com/cadr_fans/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@cadr.fans">Tiktok</a></li>
+            <li><a href="#">whatsapp</a></li>
+        </ul>
+    </div>
+    <div class="user-front">
+        <h1>CADRE FANS</h1>
+        <div class="elements" id="ele1" style="animation-name: e1;background-image: url(image/ronaldo1.jpg);"></div>
+        <div class="elements" id="ele2" style="animation-name: e2;background-image: url(image/naruto.jpg);"></div>
+        <div class="elements" id="ele3" style="animation-name: e3;background-image: url(image/ronaldo2.jpg);"></div>
+        <div class="elements" id="ele4" style="animation-name: e4;background-image: url(image/lebron.jpg);"></div>
+        <div class="elements" id="ele5" style="animation-name: e5;background-image: url(image/itache.jpg);"></div>
+    </div>
+    <div class="more" id="more">
+        <!-- scroll infint -->
+        <div class="info1" id="info1">
+            <div class="pic">
+                <div class="lineone">
+                    <div style="background-image: url(image/messi.jpg);animation-delay:calc(60s / 4 * (4 - 1) * -1)"></div>
+                    <div style="background-image: url(image/ronaldo2.jpg);animation-delay:calc(60s / 4 * (4 - 2) * -1)"></div>
+                    <div style="background-image: url(image/messi2.jpg);animation-delay:calc(60s / 4 * (4 - 3) * -1)"></div>
+                    <div style="background-image: url(image/ronaldo2.jpg);animation-delay:calc(60s / 4 * (4 - 4) * -1)"></div>
+                </div>
+                <div class="linetwo">
+                    <div style="background-image: url(image/naruto.jpg);animation-delay:calc(60s / 4 * (4 - 1) * -1)"></div>
+                    <div style="background-image: url(image/itache.jpg);animation-delay:calc(60s / 4 * (4 - 2) * -1)"></div>
+                    <div style="background-image: url(image/naruto2.jpg);animation-delay:calc(60s / 4 * (4 - 3) * -1)"></div>
+                    <div style="background-image: url(image/itache2.jpg);animation-delay:calc(60s / 4 * (4 - 4) * -1)"></div>
+                </div>
+                <div class="linethree">
+                    <div style="background-image: url(image/lebron.jpg);animation-delay:calc(60s / 4 * (4 - 1) * -1)"></div>
+                    <div style="background-image: url(image/nadal.jpg);animation-delay:calc(60s / 4 * (4 - 2) * -1)"></div>
+                    <div style="background-image: url(image/lebron2.jpg);animation-delay:calc(60s / 4 * (4 - 3) * -1)"></div>
+                    <div style="background-image: url(image/nadal2.jpg);animation-delay:calc(60s / 4 * (4 - 4) * -1)"></div>
+                </div>
+            </div>
+            <div class="info"><h2>U Looking for <span><p style="animation-delay:calc(1s / 2 * (2 - 1) * -1)" class="p1">MOTIVATION</p><p style="animation-delay:calc(1s / 2 * (2 - 2) * -1)" class="p2">CREATIVITY</p></span></h2></div>
+        </div>
+        <!-- grid box -->
+        <div class="gridbox" id="gridbox">
+            <div class="left">
+                <div class="payment"><i class='bx bx-wallet'></i><span>Payment At Delivre</span></div>
+                <div class="safe"><i class='bx bxs-lock'></i><span>Safe</span></div>
+                <div class="qoulity" id="qoulity"><i class='bx bxs-photo-album'></i><span>High Quality</span></div>
+            </div>
+            <div class="right" id="right">
+                <a href="store.html">Go To Store</a>
+            </div>
+        </div>
+    </div>
+    <div class="exmpel">
+        <div class="pic"></div>
+        <div class="text"><h1>Be sure you will get the best quality</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dicta dignissimos temporibus, aliquid provident, cum magnam asperiores quo accusantium saepe earum suscipit ducimus. Fugit autem voluptate magnam consequuntur ipsum eveniet?</div>
+    </div>
+    <div class="sendemail">
+        <form>
+            <input type="email" placeholder="Entre your email" id="emailsub">
+            <input type="submit" value="Go" onclick="sendtheemail(event)">
+        </form>
+        <label>when you send your email that mean you agree to recive email's about news from Us!</label>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' style='color:#ffffff' ></i></a>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

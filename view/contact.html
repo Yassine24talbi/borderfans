@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Cadre Fans</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="indexmenu">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="store.html">Store</a> </li>
+            <li><a href="contact.html" style="font-weight: 500;color: rgb(171, 145, 0)">Contact</a> </li>
+        </ul>
+        <i class='bx bx-chevrons-right' onclick="openmenu.call(this)" id="openbutton"></i>
+    </div>
+    <div class="nav-bar">
+        
+        <ul class="indexs">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="store.html">Store</a> </li>
+            <li><a href="contact.html" style="font-weight: 500;color: rgb(171, 145, 0)">Contact</a> </li>
+        </ul>
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="social">
+            <li><a href="https://www.instagram.com/cadr_fans/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@cadr.fans">Tiktok</a></li>
+            <li><a href="#">whatsapp</a></li>
+        </ul>
+    </div>
+
+    <form class="contact">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Message">
+        <button id="sendmessage">Send</button>
+    </form>
+    <div class="sendemail">
+        <form>
+            <input type="email" placeholder="Entre your email">
+            <input type="submit" value="Go">
+        </form>
+        <label>when you send your email that mean you agree to recive email's about news from Us!</label>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' style='color:#ffffff' ></i></a>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

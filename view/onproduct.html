@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Cadre Fans</title>
+</head>
+<body >
+    <div class="message" id="message"></div>
+    <div class="menu">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="indexmenu">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="store.html" style="font-weight: 500;color: rgb(171, 145, 0)">Store</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <i class='bx bx-chevrons-right' onclick="openmenu.call(this)" id="openbutton"></i>
+    </div>
+    <div class="nav-bar">
+        
+        <ul class="indexs">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="store.html" style="font-weight: 500;color: rgb(171, 145, 0)">Store</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="social">
+            <li><a href="https://www.instagram.com/cadr_fans/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@cadr.fans">Tiktok</a></li>
+            <li><a href="#">whatsapp</a></li>
+        </ul>
+    </div>
+    <!-- the window -->
+     
+     <div class="myframe">
+        <div class="theprPoduct-image" id="itemimage"></div>
+        <div class="diteals">
+            <div class="title" id="title">Rafail Nadal</div>
+            <form>
+                <label for="size">The frame Size :</label>
+                <span onclick="framesize.call(this)" id="small">S</span>
+                <span onclick="framesize.call(this)" id="midume">M</span>
+                <span onclick="framesize.call(this)" id="big">X</span>
+            </form>
+            <form>
+                <label for="type">The frame type:</label>
+                <span onclick="frametype.call(this)" id="palstic">Plastic</span>
+                <span onclick="frametype.call(this)" id="wood">Wood</span>
+            </form>
+            <form>
+                <label for="glass">The Glass :</label>
+                <span onclick="frameglass.call(this)" id="no">No</span>
+                <span onclick="frameglass.call(this)" id="yes">Yes</span>
+            </form>
+            <div class="price" id="price">-- DH</div>
+            <button class="last-step add" onclick="additem.call(this)">Add To Cart<i class='bx bx-download'></i></button>
+            <button class="last-step check" onclick="addandcheck.call(this)">Add and CheckOut<i class='bx bx-chevrons-right'></i></button>
+
+        </div>
+     </div>
+
+
+     <div class="holder">
+        <div class="products" id="products">
+            <div class="book">
+                <div>
+                  <ul>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg fill="currentColor" viewBox="0 0 90 120">
+                        <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+     </div>
+     <i class='bx bx-cart' id="cart" onclick="opencart()"><div id="num"></div></i>
+     <div class="checkpro" id="checkpro">
+        
+     </div>
+     <div class="sendemail">
+        <form>
+            <input type="email" placeholder="Entre your email">
+            <input type="submit" value="Go">
+        </form>
+        <label>when you send your email that mean you agree to recive email's about news from Us!</label>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' style='color:#ffffff' ></i></a>
+        </div>
+    </div>
+    <script src="store.js"></script>
+</body>
+</html>

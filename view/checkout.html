@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Cadre Fans</title>
+    <style>
+@media screen and (max-width:1100px){
+    .menu{
+        display: flex;
+        bottom: 7.5%;
+    }
+}
+    </style>
+</head>
+<body >
+    <div class="message" id="message"></div>
+    <div class="menu">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="indexmenu">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="store.html">Store</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <i class='bx bx-chevrons-right' onclick="openmenu.call(this)" id="openbutton"></i>
+    </div>
+    <div class="nav-bar">
+        
+        <ul class="indexs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <ul class="indexs" id="social">
+            <li><a href="https://www.instagram.com/cadr_fans/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@cadr.fans">Tiktok</a></li>
+            <li><a href="#">whatsapp</a></li>
+        </ul>
+    </div>
+    <h1 class="checktitle">CheckOut Page</h1>
+    <div class="parent">
+        <div class="information">
+            <form>
+                <label></label>
+                <input id="fullname" type="text" placeholder="Full Name *">
+                <input id="phone" type="number" placeholder="Phone Number *">
+                <input id="city" type="text" placeholder="City *">
+                <input id="address" type="text" placeholder="Address *">
+                <input id="email" type="Email" placeholder="Email">
+                <button onclick="sendorder(event)">Send</button>
+            </form>
+        </div>
+        <div class="checkpro" id="checkprocheckout"></div>
+        <div class="total" id="total"></div>
+    </div>
+    <div class="sendemail">
+        <form>
+            <input type="email" placeholder="Entre your email">
+            <input type="submit" value="Go">
+        </form>
+        <label>when you send your email that mean you agree to recive email's about news from Us!</label>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' style='color:#ffffff' ></i></a>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

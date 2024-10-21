@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <input type="text" id="text" placeholder="title">
+    <input type="text" id="image" placeholder="image"><br>
+    <input type="submit" onclick="sendtheemail(event)">
+    <script>
+        let text = document.getElementById('text')
+        let image = document.getElementById('image')
+        function sendtheemail(event){
+            event.preventDefault(); // Stop the form from submitting
+            if(text.value && image.value){
+                fetch(location.href,{
+                    method:'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify({
+                        title:text.value,
+                        image:image.value,
+                    })
+                }   
+                )
+                location.reload()
+            }
+        }
+    </script>
+</body>
+</html>
